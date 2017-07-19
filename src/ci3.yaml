@@ -1,0 +1,14 @@
+apiVersion: "ci3.io/v1"
+kind: Build
+description: build in src
+metadata:
+  name: build-2
+  label:
+    system: ci
+environment:
+  GIT_COMMIT:
+    command:
+      git rev-parse --short HEAD
+pipeline:
+- type: bash
+  command: echo $BUILD_ID
