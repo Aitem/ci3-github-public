@@ -12,3 +12,5 @@ environment:
 pipeline:
 - type: bash
   command: echo $BUILD_ID
+- type: bash
+  command: echo $CI3_BRANCH
